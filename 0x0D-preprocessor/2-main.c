@@ -1,7 +1,7 @@
-i#include <stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints the name of the file
+ * main - prints the name of the file it complied from
  *
  * Return: Always 0 (Success)
  */
