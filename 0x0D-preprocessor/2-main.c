@@ -1,7 +1,7 @@
 i#include <stdio.h>
 
 /**
- * main - prints the name of the file it complied from
+ * main - prints the name of the file
  *
  * Return: Always 0 (Success)
  */
