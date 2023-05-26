@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * print_binary - prints  binary equivalent of dec numb
- * @n: Numb print in bin
+ * print_binary - print binary equivalent decimal number
+ * @n: numb to print in bin
  */
 void print_binary(unsigned long int n)
 {
-	int j, counts = 0;
-	unsigned long int curr;
+	int i, count = 0;
+	unsigned long int current;
 
-	for (j = 63; j >= 0; j--)
+	for (i = 63; i >= 0; i--)
 	{
-		curr = n >> j;
+		current = n >> i;
 
-		if (curr & 1)
+		if (current & 1)
 		{
 			_putchar('1');
-			counts++;
+			count++;
 		}
-		else if (counts)
+		else if (count)
 			_putchar('0');
 	}
-	if (!counts)
+	if (!count)
 		_putchar('0');
 }
 
