@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * print_bin - prints  binary equivalent of dec numb
- * @b: Numb print in bin
+ * print_binary - prints  binary equivalent of dec numb
+ * @n: Numb print in bin
  */
-void print_bin(unsigned long int b)
+void print_binary(unsigned long int n)
 {
-	int f, count = 0;
-	unsigned long int current;
+	int j, counts = 0;
+	unsigned long int curr;
 
-	for (f = 63; f >= 0; f--)
+	for (j = 63; j >= 0; j--)
 	{
-		current = b >> f;
+		curr = n >> j;
 
-		if (current & 1)
+		if (curr & 1)
 		{
 			_putchar('1');
-			count++;
+			counts++;
 		}
-		else if (count)
+		else if (counts)
 			_putchar('0');
 	}
-	if (!count)
+	if (!counts)
 		_putchar('0');
 }
 

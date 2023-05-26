@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * ret_bit - Returns value of bit at an index in a decimal num
- * @b: number to be searched
- * @ind: Index of bit
+ * get_bit - Returns value of bit at an index in a decimal num
+ * @n: number to be searched
+ * @index: Index of bit
  *
  * Return: value of bit
  */
-int ret_bit(unsigned long int b, unsigned int ind)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit_value;
 
-	if (ind > 63)
+	if (index > 63)
 		return (-1);
 
-	bit_value = (b >> ind) & 1;
+	bit_value = (n >> index) & 1;
 
 	return (bit_value);
 }
