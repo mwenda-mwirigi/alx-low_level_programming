@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * get_bit - Function will return value of a bit at a given index in a dec num
